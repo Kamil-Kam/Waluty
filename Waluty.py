@@ -44,6 +44,10 @@ tysiac_dolarow = Waluty('USD', 1000)
 print(tysiac_dolarow.przeliczenie_waluty())
 print(tysiac_dolarow.kurs_waluty())
 
+"""
+4346.9 PLN
+1 USD = 4.3469 PLN
+"""
 
 class Waluty2:
     tabela = requests.get('http://api.nbp.pl/api/exchangerates/tables/A/').json()
@@ -67,4 +71,9 @@ class Waluty2:
 
 
 print(Waluty2.przeliczenie_waluty(kod_waluty='USD', ilosc_waluty=1000))
-print(Waluty2.kurs_waluty('USD'))
+print(Waluty2.kurs_waluty(kod_waluty='USD'))
+
+"""
+4346.9 PLN
+1 USD = 4.3469 PLN
+"""
