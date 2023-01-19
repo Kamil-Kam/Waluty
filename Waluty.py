@@ -13,6 +13,10 @@
 # Na rozwiązanie czekam do końca dnia do niedzieli 22.01.2023
 """
 
+
+"""
+Dwie klasy -> dwa sposoby rozwiązania
+"""
 import requests
 
 
