@@ -53,7 +53,7 @@ class Waluty2:
     tabela = requests.get('http://api.nbp.pl/api/exchangerates/tables/A/').json()
 
     @staticmethod
-    def znajdz_przelicznik(kod_waluty):
+    def znajdz_przelicznik(kod_waluty) -> float:
         for i in Waluty2.tabela[0]['rates']:
             if i['code'] == kod_waluty:
                 return i['mid']
